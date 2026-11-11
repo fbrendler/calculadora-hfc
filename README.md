@@ -4,8 +4,8 @@
 
 [![Calculadora HFC — versão 0.27](calculadora-publicada-0.27.png)](https://calculadora-hfc.pages.dev/)
 
+Versão 0.28 — by BRENDLER™.
 
-Versão 0.27 — by BRENDLER™.
 
 Calculadora de atenuação para cabos RG6 e RG11, divisores e DCs.
 
