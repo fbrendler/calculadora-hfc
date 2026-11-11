@@ -4,7 +4,8 @@
 
 [![Calculadora HFC — versão 0.27](calculadora-publicada-0.27.png)](https://calculadora-hfc.pages.dev/)
 
-Versão 0.30 — by BRENDLER™.
+Versão 0.31 — by BRENDLER™.
+
 
 
 
