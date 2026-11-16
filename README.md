@@ -1,34 +1,28 @@
-# Calculadora HFC
+# Calculadora G-PON
 
-## Visual da calculadora
+Versão 0.70 — by BRENDLER™.
 
-[![Calculadora HFC — versão 0.27](calculadora-publicada-0.27.png)](https://calculadora-hfc.pages.dev/)
+Calculadora simples do trajeto entre a NAP e a ONT do cliente. Abra `index.html` em um navegador; o arquivo é autossuficiente e pode ser publicado no Cloudflare Pages.
 
-Versão 0.32 — by BRENDLER™.
+## Uso
 
+Informe a potência RX na origem do trecho e a distância da fibra em metros. A tecnologia é G-PON e o cálculo é fixo no sentido downstream, da NAP até a ONT. Potência e distância começam em zero; a atenuação é fixa em 0,00023 dB/m. Nenhum passivo é adicionado inicialmente. O divisor 1:2 aplica 3,5 dB fixos; o resultado inclui perdas mínima/máxima dos passivos adicionados. A faixa de potência é mostrada sempre do melhor sinal para o pior. O botão Limpar restaura potência e distância para zero e esvazia a lista de passivos.
 
+Com os valores iniciais em zero e sem passivos, o resultado é 0,00 a 0,00 dBm.
 
+O comprimento de onda é 1490 nm. Os padrões informados são NAP/DIO RX: -25 a 0 dBm e ONT RX: -27 a -8 dBm. A potência de origem fica vermelha em -25 dBm ou abaixo; cada extremo da faixa estimada na ONT fica vermelho individualmente em -27 dBm ou menos.
 
-Calculadora de atenuação para cabos RG6 e RG11, divisores e DCs.
-
-## Acessar a calculadora
-
-[Abrir calculadora HFC](https://calculadora-hfc.pages.dev/)
+As perdas dos passivos são fixas e não editáveis: cordão óptico, 1,0–1,6 dB; conector óptico, 0,5–0,8 dB; divisor 1:2, 3,5 dB; PTO, 0 dB. O divisor pode ser adicionado pelo mesmo menu dos demais passivos; no máximo um divisor é permitido por instalação.
 
 ## Relatar problemas
 
 Use o botão Relatar problema na calculadora ou abra uma issue em https://github.com/fbrendler/calculadora-hfc/issues.
 
-## Uso
-
-Abra `index.html` em um navegador. Selecione onde o sinal foi medido (TAP/DG ou Ponto), preencha os sinais disponíveis, informe a metragem e adicione os passivos com as saídas utilizadas. O cálculo ocorre automaticamente no sentido correspondente. O botão Limpar zera sinais, metragem e passivos para um novo cálculo.
-
-Os sinais são opcionais. Metragem vazia equivale a zero metro. Os coeficientes dos cabos são fixos; a atenuação dos passivos é somada em série. As cores e avisos seguem os limites definidos para cada destino.
-
-## Publicação
-
-O arquivo `index.html` é autossuficiente e pode ser enviado ao Cloudflare Pages. Site publicado em https://calculadora-hfc.pages.dev/.
-
 ## Versionamento
 
 Incrementar o número exibido no rodapé em 0.01 a cada solicitação de alteração implementada.
+A faixa fixa mínima/máxima dos passivos é apresentada lado a lado na mesma linha.
+
+O layout prioriza celulares: campos compactos em duas colunas, rótulos alinhados acima dos respectivos campos, potência e instrução lado a lado, botão de passivo junto ao seletor, resultados agrupados e faixas GPON recolhidas inicialmente para reduzir a rolagem. Espaçamentos verticais também são reduzidos em telas de até 700 px, mantendo os textos e os alvos de toque confortáveis.
+
+As colunas da tabela de referência GPON podem ser redimensionadas arrastando suas divisórias. Abra a seção de referência e use as alças verticais destacadas no cabeçalho; também é possível ajustar a coluna selecionada com as setas do teclado.
