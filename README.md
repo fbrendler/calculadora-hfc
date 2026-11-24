@@ -2,7 +2,7 @@
 
 ## Visual da calculadora
 
-[![Calculadora HFC — versão 0.27](calculadora-publicada-0.27.png)](https://calculadora-hfc.pages.dev/)
+[![Calculadora HFC — versão 0.34](calculadora-publicada-0.34.png)](https://calculadora-hfc.pages.dev/)
 
 Versão 0.34 — by BRENDLER™.
 
