@@ -4,7 +4,7 @@
 
 [![Calculadora HFC — versão 0.27](calculadora-publicada-0.27.png)](https://calculadora-hfc.pages.dev/)
 
-Versão 0.33 — by BRENDLER™.
+Versão 0.34 — by BRENDLER™.
 
 
 
@@ -21,9 +21,9 @@ Use o botão Relatar problema na calculadora ou abra uma issue em https://github
 
 ## Uso
 
-Abra `index.html` em um navegador. Selecione onde o sinal foi medido (TAP/DG ou Ponto) e a origem (TAP ou DG), preencha os sinais disponíveis, informe a metragem e adicione os passivos com as saídas utilizadas. O cálculo ocorre automaticamente no sentido correspondente. O botão Limpar zera sinais, metragem e passivos para um novo cálculo.
+Abra `index.html` em um navegador. Selecione onde o sinal foi medido (TAP/DG ou Ponto), preencha os sinais disponíveis, informe a metragem e adicione os passivos com as saídas utilizadas. O cálculo ocorre automaticamente no sentido correspondente. O botão Limpar zera sinais, metragem e passivos para um novo cálculo.
 
-Os sinais são opcionais. Metragem vazia equivale a zero metro. Os coeficientes dos cabos são fixos; a atenuação dos passivos é somada em série. As cores e avisos seguem os limites definidos para cada destino. Alerta de TX na origem: TAP 36 a 43, DG 37 a 43 dBmV.
+Os sinais são opcionais. Metragem vazia equivale a zero metro. Os coeficientes dos cabos são fixos; a atenuação dos passivos é somada em série. As cores e avisos seguem os limites definidos para cada destino. Alerta de TX no TAP: 36 a 43 dBmV.
 
 ## Publicação
 
